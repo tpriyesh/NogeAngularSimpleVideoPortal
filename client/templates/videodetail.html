@@ -1,0 +1,22 @@
+<div class="box">
+
+  <article class="video1">
+	 <h2 class="videoTitle">{{video.name}}</h2>
+        <figure>
+		<div style="position:relative">
+		<div style="padding:2px 4px 2px 6px">
+       <video width="262" height="147" controls>
+  <source src="{{video.url}}" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video>
+</div>
+</div>
+        </figure>
+        
+		<div star-rating rating="video.rating"  click="UpdateRating(param)"></div>
+		<div>{{video.description}}</div>
+		
+      </article>
+
+</div>
